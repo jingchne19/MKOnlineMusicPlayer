@@ -1,0 +1,74 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.clearfix:after{
+   content:".";/*加一段内容*/
+   display:block;/*让生成的元素以块级元素显示，占满剩余空间*/
+   height:0;/*避免生成的内容破坏原有布局高度*/
+   clear:both;/*清除浮动*/
+   visibility:hidden;/*让生成的内容不可见*/
+  }
+  .clearfix{zoom:1;/*为IE6，7的兼容性设置*/}
+#page{
+  width: 100%;
+}
+#hdr{
+  font-size: 36px;
+  font-weight: bold;
+  height: 80px;
+  background-color: #8F8FBD;
+  padding-left: 10px;
+  line-height: 80px;
+}
+.big{
+  font-size: 26px;
+  font-weight: bold;
+  width: 20%;
+  height: 120px;
+  background-color: #c0c0c0;
+  float: left;
+  line-height: 120px;
+  text-align: center;
+}
+.sm{
+  width: 79%;
+  height: 60px;
+  float: left;
+  padding-left: 10px;
+  border-right: 1px solid #A5CF3D;
+}
+.topMd{
+  line-height: 120px;
+}
+.line{
+  border-bottom: 1px solid #A5CF3D;
+}
+.sm div{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sm span{
+  padding:0 40px 0 10px;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  color: blue;
+}
+.md{
+  line-height: 60px;
+}
+.md div{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.md span{
+  padding: 0;
+  font-size: 20px;
+}
+.topMd{
+  height: 120px;
+}

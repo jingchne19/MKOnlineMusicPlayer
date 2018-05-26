@@ -1,0 +1,59 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.clearfix:after{
+   content:".";/*加一段内容*/
+   display:block;/*让生成的元素以块级元素显示，占满剩余空间*/
+   height:0;/*避免生成的内容破坏原有布局高度*/
+   clear:both;/*清除浮动*/
+   visibility:hidden;/*让生成的内容不可见*/
+  }
+  .clearfix{zoom:1;/*为IE6，7的兼容性设置*/}
+#page{
+  width: 100%;
+}
+#conten{
+  padding: 10px 20px;
+  float: left;
+}
+#hdr{
+  font-size: 36px;
+  font-weight: bold;
+  width: 300px;
+  height: 850px;
+  background-color: #8F8FBD;
+  float: left;
+  text-align: center;
+  padding-top: 50px;
+}
+.big{
+  font-size: 26px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.sm div{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sm span{
+  padding:0 40px 0 10px;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  color: blue;
+}
+div{
+  margin: 10px 0;
+}
+.md div{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.md span{
+  padding: 0;
+  font-size: 20px;
+}

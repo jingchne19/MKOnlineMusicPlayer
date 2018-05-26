@@ -1,0 +1,39 @@
+#page{
+  border:1px solid #c0c0c0;
+  width: 900px;
+  padding-left: 10px; 
+}
+#hdr{
+  font-size: 36px;
+  font-weight: bold;
+}
+.big{
+  font-size: 26px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.sm div{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sm span{
+  padding:0 40px 0 10px;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  color: blue;
+}
+div{
+  margin: 10px 0;
+}
+.md div{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.md span{
+  padding: 0;
+  font-size: 20px;
+}
