@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>两栏布局固定</title>
+    <style type="text/css">
+    .center {
+        position: absolute;
+        left: 200px;
+        right: 150px;
+        height: 200px;
+        background-color: red;
+        word-break: break-word;
+    }
+
+    .left {
+        width: 200px;
+        height: 200px;
+        float: left;
+        background-color: blue;
+    }
+
+    .right {
+        width: 150px;
+        height: 200px;
+        float: right;
+        background-color: yellow;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="left">
+            <p>left</p>
+        </div>
+        <div class="right">
+            <p>right</p>
+        </div>
+        <div class="center">
+            <p>center</p>
+        </div>
+    </div>
+</body>
+
+</html>

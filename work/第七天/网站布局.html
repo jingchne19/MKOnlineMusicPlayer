@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>两栏布局固定</title>
+    <style type="text/css">
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header {
+        height: 120px;
+        background-color: #c0c0c0;
+    }
+
+    .footer {
+        height: 120px;
+        background-color: #c0c0c0;
+        margin-top: 40px;
+        text-align: center;
+        line-height: 60px;
+        font-weight: bold;
+    }
+
+    .ppt {
+        height: 400px;
+        background-color: green;
+    }
+
+    .content {
+        height: 100px;
+        border-bottom: 1px solid #c0c0c0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+    }
+
+    li {
+        float: left;
+        border-right: 1px solid red;
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        height: 70px;
+        width: 120px;
+        line-height: 70px;
+        background-color: yellow;
+        border: 1px solid #c0c0c0;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        color: black;
+    }
+
+    .active {
+        z-index: 1;
+        border-bottom: 1px solid white;
+        background-color: white;
+    }
+
+    .daohang {
+        width: 960px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .parent {
+        display: flex;
+        width: 980px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .column {
+        flex: 1;
+        border: 1px solid #c0c0c0;
+        margin: 10px;
+        height: 200px;
+        min-width: 80px;
+        line-height: 200px;
+        text-align: center;
+    }
+    .ppt_cli{
+        position:absolute;
+        width: 220px;
+        height: 60px;
+        right: 0px;
+        bottom: 10px;
+    }
+    .ppt_cli span{
+        float: left;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: red;
+        margin-right: 10px;
+        border:1px solid #c0c0c0;
+        text-align: center;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .con_ppt{
+        height: 100%;
+        width: 960px;
+        margin:0 auto;
+        position: relative;
+    }
+    #act{
+        height: 60px;
+        margin-top:0;
+        margin-bottom: 0;
+        line-height: 80px;
+        background-color: blue;
+    }
+    .logo{
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 120px;
+    }
+    .caidan{
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="con_ppt">
+            <div class="logo">LOGO</div>
+            <div class="caidan">
+                <span><a href="#">1dwad</a></span>
+                <span><a href="#">2wda</a></span>
+                <span><a href="#">3dsw</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="ppt">
+        <div class="con_ppt">
+            <div class="ppt_cli">
+            <span>1</span>
+            <span id="act">2</span>
+            <span>3</span>
+            <span>4</span>
+        </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="daohang">
+            <ul>
+                <li class="active">主页</li>
+                <li>新闻</li>
+                <li>联系</li>
+            </ul>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="column">
+            test1
+        </div>
+        <div class="column">
+            test2
+        </div>
+        <div class="column">
+            test3
+        </div>
+    </div>
+    <div class="parent">
+        <div class="column">
+            test1
+        </div>
+        <div class="column">
+            test2
+        </div>
+        <div class="column">
+            test3
+        </div>
+        <div class="column">
+            test3
+        </div>
+    </div>
+    <div class="parent">
+        <div class="column">
+            test1
+        </div>
+        <div class="column">
+            test2
+        </div>
+        <div class="column">
+            test3
+        </div>
+    </div>
+    <div class="footer">
+        &copy;&nbsp;&nbsp;2018&nbsp;&nbsp;ife.baidu.com
+    </div>
+</body>
+
+</html>
